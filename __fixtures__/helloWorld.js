@@ -9,7 +9,7 @@ type:bold
 []
 []
 [.paragraph]
-text: I love music
+text: I love archieml
 [.formatting]
 type:bold
 []
@@ -23,7 +23,7 @@ export const parsedArchiemlDoc = {
   body: [
     {
       header1: [{ text: "i love you", formatting: [{ type: "bold" }] }],
-      paragraph: [{ text: "I love music", formatting: [{ type: "bold" }] }],
+      paragraph: [{ text: "I love archieml", formatting: [{ type: "bold" }] }],
     },
   ],
 };
