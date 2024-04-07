@@ -2,7 +2,35 @@ import { drive_v2, google } from "googleapis";
 import { Compute, GoogleAuth } from "google-auth-library";
 
 /**
- * @typedef {{drive: drive_v2.Drive; client: import("google-auth-library/build/src/auth/googleauth").JSONClient|Compute}} AuthUtilities
+ * @typedef {{
+ * drive: drive_v2.Drive;
+ * client: import("google-auth-library/build/src/auth/googleauth").JSONClient|Compute
+ * }} AuthUtilities
+ *
+ * @typedef {{ config:Config;
+ *      data:       string;
+ *      headers:    { [key: string]: string };
+ *      status:     number;
+ *      statusText: string;
+ *     request:    Request;
+ *  }} GoogleDocBody
+ *
+ *  @typedef {{
+ *      method:       string;
+ *      url:          string;
+ *      headers:      Headers;
+ *      responseType: string;
+ *  }} Config
+ *
+ * @typedef {{
+ *     Authorization:       string;
+ *     "User-Agent":        string;
+ *     "x-goog-api-client": string;
+ * }} Headers
+ *
+ * @typedef {{
+ *     responseURL: string;
+ * }} Request
  */
 
 /**
@@ -27,7 +55,7 @@ export async function handleAuth() {
  * Uses AuthUtilities passed from handleAuth() to get a gDoc body
  * @param {string} docId
  * @param {AuthUtilities} authUtilities
- * @returns
+ * @returns {GoogleDocBody}
  */
 export async function getDoc(docId, { drive, client }) {
   //   get the doc of interest

@@ -143,3 +143,11 @@ node -r dotenv/config examples/get-single-doc.js
 - [ ] Google Sheets: add examples pulling data from google sheets
 - [ ] Google Docs: add example using dropdowns
 - [ ] Google Docs: add example using suggestion mode
+
+---
+
+## Credits
+
+- Created by [@joeyklee](https://jk-lee.com)
+- Based on the demo in [archieml-js/examples](https://github.com/newsdev/archieml-js/blob/master/examples/google_drive.js)
+- Made possible by [ArchieML](http://archieml.org/) and all the [contributors](https://github.com/newsdev/archieml-js/graphs/contributors) and [people who have built other helpful tools to support archieml](http://archieml.org/#resources) in their own work and organizations
