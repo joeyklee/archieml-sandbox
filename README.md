@@ -25,6 +25,7 @@ Once you've taken care of all the google cloud/auth/permissions nonsense, then y
 
 <br>
 <br>
+
 ---
 
 # Before Getting Started: Set up Google Cloud and create a google doc with archieml in it
@@ -67,6 +68,7 @@ After following the steps above, you need to decide how you want your app to get
 
 <br>
 <br>
+
 ---
 
 # Demo: A tiny node app that gets google docs by their ID
@@ -113,6 +115,7 @@ http://localhost:3000/doc/blah1blah2hello3yo4
 
 <br>
 <br>
+
 ---
 
 # Additional Examples
