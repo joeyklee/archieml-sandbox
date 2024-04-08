@@ -133,6 +133,7 @@ node -r dotenv/config examples/get-single-doc.js
 
 <br>
 <br>
+
 ---
 
 # Other ideas to demo
@@ -145,6 +146,7 @@ node -r dotenv/config examples/get-single-doc.js
 
 <br>
 <br>
+
 ---
 
 ## Credits
