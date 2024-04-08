@@ -1,5 +1,5 @@
 import { drive_v2, google } from "googleapis";
-import { Compute, GoogleAuth } from "google-auth-library";
+import { GoogleAuth } from "google-auth-library";
 
 /**
  * @typedef {{
