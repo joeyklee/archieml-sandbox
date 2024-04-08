@@ -6,6 +6,25 @@
 
 A small "sandbox" (a place to play) repo to demo one of the many ways of setup archieml with google auth library and google cloud. I'm hoping this is a helpful collection of examples and documentaiton to help you get up and running with google docs with archieml content in it. The goal is to keep the examples super simple so you can run with your own ideas! ❤
 
+## Overview
+
+BEFORE you can run any of the examples in this repo, you'll need to do a few things:
+
+1. Get stuff setup in google cloud
+   - follow these instructions to [Create a project using google cloud > create a service account > enable billing and the google drive api](#step-1---setup-create-your-google-cloud-service-account-enable-billing-and-google-drive)
+2. Get yourself setup to make auth'd requests from this repo
+   - depending on how you roll, you can choose ONE of these instructions to follow or talk to an informed friend about how to permission a node.js project to talk to the google drive api
+     - [Google auth with application default credentials](/documentation/google-auth-with-application-default-credentials.md) (RECOMMENDED)
+     - [Google Auth with local service account credentials](/documentation/google-auth-with-local-service-account-credentials.md)
+3. Create a gdoc > add some archieml > and give your service account permissions to read that specific gdoc
+   - follow these instructions here at [step 3](#step-3---setup-create-and-permission-your-gdoc)
+
+It's as easy as 1,2,3 🎶! But seriously, all the auth and permissions stuff can be a drag and really hard to parse through especially if you're not familiar with google cloud and how they handle auth/permissions. Hopefully some of these docs are useful for you ❤
+
+Once you've taken care of all the google cloud/auth/permissions nonsense, then you can [run the demo app](#demo-a-tiny-node-app-that-gets-google-docs-by-their-id) or [run the simple example script to get a single doc](#get-single-docjs)
+
+<br>
+<br>
 ---
 
 # Before Getting Started: Set up Google Cloud and create a google doc with archieml in it
@@ -46,6 +65,8 @@ After following the steps above, you need to decide how you want your app to get
 3. update the docs permissions:
    - click: share > add the service account email you want to permission
 
+<br>
+<br>
 ---
 
 # Demo: A tiny node app that gets google docs by their ID
@@ -90,6 +111,8 @@ you can see the contents of that gDoc by making a request for `blah1blah2hello3y
 http://localhost:3000/doc/blah1blah2hello3yo4
 ```
 
+<br>
+<br>
 ---
 
 # Additional Examples
@@ -105,6 +128,8 @@ This example will just get a single doc log the parsed result. Make sure you've 
 node -r dotenv/config examples/get-single-doc.js
 ```
 
+<br>
+<br>
 ---
 
 # Other ideas to demo
@@ -115,6 +140,8 @@ node -r dotenv/config examples/get-single-doc.js
 - [ ] Google Docs: add example using dropdowns
 - [ ] Google Docs: add example using suggestion mode
 
+<br>
+<br>
 ---
 
 ## Credits
